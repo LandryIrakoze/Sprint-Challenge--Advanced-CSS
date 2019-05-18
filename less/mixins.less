@@ -1,1 +1,22 @@
 // Mixins Here
+.test() {
+    border: 1px solid red;
+}
+
+.btn(@bg: @btn-bg-color, @font: @wild-sand) {
+    background-color: @bg;
+    color: @font;
+    font-size: 2rem;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+
+    @media @phone {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    &:hover {
+        background-color: @font;
+        color: @bg;
+    }
+}
