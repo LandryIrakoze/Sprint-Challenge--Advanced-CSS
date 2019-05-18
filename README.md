@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website uses pre selected html for different viewports and devices, whereas a responsive website uses only one html file which gets dynamically rendered depending on the size of the device being used.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first design means starting your base styles to work on mobile devices, and then adding your styles for desktop using media queries, while desktp first is this same process but in reverse. Starting your styles with desktop users in mind, and then using media queries to add mobile views.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Setting our font size to 62.5 in the html tag allows us to use the rem units in our html file but using a tenth of the scale as we'd normally use for fonts ie 16px = 1.6rem. This allows us to use rem units without having to do much calculation when considering our font size in pixels.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+I'd describe preprocessing as a more extensible version of CSS which gives us access to a familiar and more intuitive way of structuring our CSS. This later goes and gets compiled into regular CSS which is what the browser see's.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is parametric mixins. I like how it allows for more modular self contained code which makes for styling easier and less repetition. I struggled a bit understanding bubbling, and also some of the other things that happened behind the scenes when our less files get compiled.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
